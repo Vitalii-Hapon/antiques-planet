@@ -1,0 +1,83 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  flex: 0 0 auto;
+  background-color: var(--background-primary-color);
+}
+
+.main-nav,
+.sub-nav {
+  display: flex;
+  padding: 0 150px;
+}
+
+.main-nav {
+  align-items: baseline;
+  height: 78px;
+  border-bottom: 1px solid #c4c4c4;
+  line-height: 78px;
+}
+
+.logo-link {
+  font-family: var(--title-font-family);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.link {
+  font-size: var(--header-font-size);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--secondary-color);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.customers-link {
+  margin-left: 130px;
+}
+
+.search-btn {
+  align-self: center;
+  margin-left: 384px;
+  background-color: var(--background-primary-color);
+}
+
+.about-link {
+  margin-left: 45px;
+}
+
+.contacts-link {
+  margin-left: 30px;
+}
+
+.authorization-link {
+  margin-left: auto;
+}
+
+.sub-nav {
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.link-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 625px;
+}
+
+.store-link {
+  font-size: calc(var(--header-font-size) + 2px);
+}
+
+.bg-search {
+  width: 24px;
+  height: 24px;
+  background-position: -367px -156px;
+}
