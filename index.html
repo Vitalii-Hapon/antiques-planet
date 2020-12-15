@@ -13,6 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link href="styles/css/styles.css" rel="stylesheet">
 </head>
 
@@ -39,9 +41,9 @@
     </header>
 
     <main class="content">
-        <section class="main-slider__section">
-            <div class="main-slider__wrapper">
-                <div class="main-slide">
+        <section class="main-slider__section swiper-container">
+            <div class="main-slider__wrapper swiper-wrapper">
+                <div class="main-slider__slide main-slide swiper-slide">
                     <article class="main-slide__article">
                         <h2 class="main-slide__title">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -53,9 +55,17 @@
                         <a class="main-slide__link-btn link-btn" href="#">shop now</a>
                     </article>
                 </div>
-                <!-- <div class="main-slide main-slider__second-slide"></div>
-                <div class="main-slide main-slider__third-slide"></div>
-                <div class="main-slide main-slider__fourth-slide"></div>  -->
+                <div class="main-slider__slide main-slide swiper-slide"></div>
+                <div class="main-slider__slide main-slide swiper-slide"></div>
+                <div class="main-slider__slide main-slide swiper-slide"></div>
+            </div>
+            <div class="swiper-button-prev">
+                <div class="icon bg-arrow arrow-prev "></div>
+            </div>
+
+            <div class="swiper-button-next">
+                <div class="icon bg-arrow arrow-next "></div>
+            </div>
         </section>
 
         <section class="section slider-section section-new">
@@ -324,7 +334,7 @@
                 </ul>
             </div>
         </nav>
-        
+
         <nav class="footer__sub-nav">
             <ul class="sub-nav-list">
                 <li class="sub-nav-list__item">
@@ -359,7 +369,7 @@
                         <li class="site-link-list__item">
                             <a href="wa.me0/+987654321">whatsapp +9 876 543 21</a>
                         </li>
-                        
+
                         <li class="site-link-list__item">
                             <a href="mailto:antique@planet .com">email antique@planet.com</a>
                         </li>
@@ -371,6 +381,8 @@
         <p>Copyright &#169 2020 All rights reserved</p>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
