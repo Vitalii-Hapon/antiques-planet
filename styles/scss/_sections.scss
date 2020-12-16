@@ -2,6 +2,13 @@
   flex: 1 0 auto;
 }
 
+.anchor {
+  position: relative;
+  top: -128px;
+  display: block;
+  visibility: hidden;
+}
+
 .link-btn {
   display: block;
   width: 124px;

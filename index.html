@@ -21,20 +21,20 @@
 <body>
     <header class="header">
         <nav class="main-nav">
-            <a href="#" class="logo-link">AntiquesPlanet</a>
-            <a href="#" class="link customers-link">Sellers / Buyers</a>
+            <a href="#main" class="logo-link">AntiquesPlanet</a>
+            <a href="#customers" class="link customers-link">Sellers / Buyers</a>
             <button class="search-btn icon bg-search"></button>
-            <a href="#" class="link about-link">About</a>
-            <a href="#" class="link contacts-link">Contacts</a>
+            <a href="#benefits" class="link about-link">About</a>
+            <a href="#contacts" class="link contacts-link">Contacts</a>
             <a href="#" class="link authorization-link">login / registration</a>
         </nav>
 
         <nav class="sub-nav">
             <ul class="link-menu">
-                <li class="link"><a href="#">catalog</a></li>
-                <li class="link"><a href="#">sellers</a></li>
-                <li class="link"><a href="#">recommended</a></li>
-                <li class="link"><a href="#">new</a></li>
+                <li class="link"><a href="#catalog">catalog</a></li>
+                <li class="link"><a href="#sellers">sellers</a></li>
+                <li class="link"><a href="#recommended">recommended</a></li>
+                <li class="link"><a href="#new">new</a></li>
             </ul>
             <a href="" class="link store-link">create your store</a>
         </nav>
@@ -42,6 +42,7 @@
 
     <main class="content">
         <section class="main-slider__section swiper-container">
+            <a name="main" class="anchor"></a>
             <div class="main-slider__wrapper swiper-wrapper">
                 <div class="main-slider__slide main-slide swiper-slide">
                     <article class="main-slide__article">
@@ -59,43 +60,125 @@
                 <div class="main-slider__slide main-slide swiper-slide"></div>
                 <div class="main-slider__slide main-slide swiper-slide"></div>
             </div>
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev main-slider__button-prev">
                 <div class="icon bg-arrow arrow-prev "></div>
             </div>
 
-            <div class="swiper-button-next">
+            <div class="swiper-button-next main-slider__button-next">
                 <div class="icon bg-arrow arrow-next "></div>
             </div>
+
+            <div class="swiper-pagination"></div>
         </section>
 
-        <section class="section slider-section section-new">
+
+        <section class="section section-new">
+            <a name="new" class="anchor"></a>
             <div class="section__header slider-header">
                 <h2 class="section__title ">New</h2>
                 <a class="section__btn link-btn" href="#">view all</a>
             </div>
 
-            <div class="slider-wrapper"></div>
+            <div class="section-new__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="section-new__slide swiper-slide">
+                        <img src="./img/sliders/slider1.png" alt="slide image">
+                    </div>
+                    <div class="section-new__slide swiper-slide">
+                        <img src="./img/sliders/slider1.png" alt="slide image">
+                    </div>
+                    <div class="section-new__slide swiper-slide">
+                        <img src="./img/sliders/slider1.png" alt="slide image">
+                    </div>
+                    <div class="section-new__slide swiper-slide">
+                        <img src="./img/sliders/slider1.png" alt="slide image">
+                    </div>
+                </div>
+                <div class="swiper-button-prev section-new__slider__button-prev">
+                    <div class="icon bg-arrow-black arrow-prev "></div>
+                </div>
+
+                <div class="swiper-button-next section-new__slider__button-next">
+                    <div class="icon bg-arrow-black arrow-next "></div>
+                </div>
+            </div>
         </section>
 
-        <section class="section slider-section section-recommended">
+
+        <section class="section section-recommended">
+            <a name="recommended" class="anchor"></a>
             <div class="section__header slider-header">
                 <h2 class="section__title">Recommended</h2>
                 <a class="section__btn link-btn" href="#">view all</a>
             </div>
 
-            <div class="slider-wrapper"></div>
+            <div class="section-recommended__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="section-recommended__slide swiper-slide">
+                        <img src="./img/sliders/slider2.png" alt="slide image">
+                    </div>
+                    <div class="section-recommended__slide swiper-slide">
+                        <img src="./img/sliders/slider2.png" alt="slide image">
+                    </div>
+                    <div class="section-recommended__slide swiper-slide">
+                        <img src="./img/sliders/slider2.png" alt="slide image">
+                    </div>
+                    <div class="section-recommended__slide swiper-slide">
+                        <img src="./img/sliders/slider2.png" alt="slide image">
+                    </div>
+                </div>
+                <div class="swiper-button-prev section-recommended__slider__button-prev">
+                    <div class="icon bg-arrow-black arrow-prev "></div>
+                </div>
+
+                <div class="swiper-button-next section-recommended__slider__button-next">
+                    <div class="icon bg-arrow-black arrow-next "></div>
+                </div>
+            </div>
         </section>
 
-        <section class="section slider-section section-sellers">
+        
+        <section class="section section-sellers" #sellers>
+            <a name="sellers" class="anchor"></a>
             <div class="section__header slider-header">
                 <h2 class="section__title">Sellers</h2>
                 <a class="section__btn link-btn" href="#">view all</a>
             </div>
 
-            <div class="slider-wrapper"></div>
+            <div class="section-sellers__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="section-sellers__slide swiper-slide">
+                        <img src="./img/sliders/slider3.png" alt="slide image">
+                    </div>
+
+                    <div class="section-sellers__slide swiper-slide">
+                        <img src="./img/sliders/slider3.png" alt="slide image">
+                    </div>
+
+                    <div class="section-sellers__slide swiper-slide">
+                        <img src="./img/sliders/slider3.png" alt="slide image">
+                    </div>
+
+                    <div class="section-sellers__slide swiper-slide">
+                        <img src="./img/sliders/slider3.png" alt="slide image">
+                    </div>
+
+                    <div class="section-sellers__slide swiper-slide">
+                        <img src="./img/sliders/slider3.png" alt="slide image">
+                    </div>
+                </div>
+                <div class="swiper-button-prev section-sellers__slider__button-prev">
+                    <div class="icon bg-arrow-black arrow-prev "></div>
+                </div>
+
+                <div class="swiper-button-next section-sellers__slider__button-next">
+                    <div class="icon bg-arrow-black arrow-next "></div>
+                </div>
+            </div>
         </section>
 
         <section class="section section-information">
+            <a name="customers" class="anchor"></a>
             <div class="section__header central-header">
                 <h2 class="section__title central-title">Information</h2>
             </div>
@@ -117,6 +200,7 @@
         </section>
 
         <section class="section section-popular">
+            <a name="catalog" class="anchor"></a>
             <div class="section__header central-header">
                 <h2 class="section__title central-title">Popular-sections</h2>
             </div>
@@ -165,6 +249,7 @@
         </section>
 
         <section class="section section-benefits">
+            <a name="benefits" class="anchor"></a>
             <div class="section__header central-header">
                 <h2 class="section__title central-title">
                     Benefits
@@ -320,7 +405,7 @@
 
     <footer class="footer">
         <nav class="footer__main-nav">
-            <a href="#" class="logo-link">AntiquesPlanet</a>
+            <a href="#main" class="logo-link">AntiquesPlanet</a>
 
             <div class="social-links-wrapper">
                 <h2 class="section__title central-title">
@@ -330,7 +415,7 @@
                     <li class="social-links__item icon bg-facebook"></li>
                     <li class="social-links__item icon bg-youtube"></li>
                     <li class="social-links__item icon bg-instagram"></li>
-                    <li class="social-links__item icon bg-instagram"></li>
+                    <li class="social-links__item icon bg-pinterest"></li>
                 </ul>
             </div>
         </nav>
@@ -340,27 +425,28 @@
                 <li class="sub-nav-list__item">
                     <ul class="sub-nav-list__main-links-list">
                         <li class="main-link-list__item">
-                            <a href="#">sellers/buyers</a>
+                            <a href="#customers">sellers/buyers</a>
                         </li>
                         <li class="main-link-list__item">
-                            <a href="#">about</a>
+                            <a href="#benefits">about</a>
                         </li>
                         <li class="main-link-list__item">
-                            <a href="#">contacts</a>
+                            <a href="#contacts">contacts</a>
                         </li>
                     </ul>
                 </li>
 
                 <li class="sub-nav-list__item">
                     <ul class="sub-nav-list__site-links-list">
-                        <li class="site-link-list__item"><a href="#">catalog</a></li>
-                        <li class="site-link-list__item"><a href="#">new</a></li>
-                        <li class="site-link-list__item"><a href="#">recommended</a></li>
-                        <li class="site-link-list__item"><a href="#">sellers</a></li>
+                        <li class="site-link-list__item"><a href="#catalog">catalog</a></li>
+                        <li class="site-link-list__item"><a href="#new">new</a></li>
+                        <li class="site-link-list__item"><a href="#recommended">recommended</a></li>
+                        <li class="site-link-list__item"><a href="#sellers">sellers</a></li>
                     </ul>
                 </li>
 
                 <li class="sub-nav-list__item">
+                    <a name="contacts"></a>
                     <ul class="sub-nav-list__contacts-links-list">
                         <li class="site-link-list__item">
                             <a href="tel:+0123456789">contact us +0 123 45 67 89</a>

@@ -9,7 +9,7 @@
   --footer-font-size: 14px;
   --link-btn-font-size: 14px;
   --primary-color: #333;
-  --footer-color: #fff;
+  --white-color: #fff;
   --secondary-color: rgb(198, 165, 87);
   --hover-color: rgba(198, 165, 87, 0.85);
   --background-primary-color: #fff;
@@ -41,10 +41,4 @@ h3 {
 
 .icon {
   background-image: url("../../img/icons-sprite/css_sprites.png");
-}
-
-.bg-arrow_black {
-  width: 14px;
-  height: 25px;
-  background: url("css_sprites.png") -401px -200px;
 }
