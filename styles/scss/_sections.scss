@@ -29,7 +29,6 @@
 }
 
 .section {
-  // padding: var(--main-padding);
   margin: 0 auto;
 
   &__header {
@@ -253,5 +252,11 @@
       box-shadow: -8px 6px 15px 1px var(--box-shadow-color);
       transition: 0.2s ease-in-out;
     }
+  }
+}
+
+@media (max-width: 1800px) {
+  .content-wrapper {
+    max-width: 90vw;
   }
 }
