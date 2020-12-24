@@ -15,7 +15,7 @@
   height: 37px;
   border: 1px solid var(--primary-color);
   font-family: var(--subtitle-font-family);
-  font-size: var(--link-btn-font-size);
+  font-size: var(--subtitle-font-size);
   font-weight: normal;
   line-height: 37px;
   text-align: center;
@@ -29,7 +29,8 @@
 }
 
 .section {
-  padding: 0 150px;
+  // padding: var(--main-padding);
+  margin: 0 auto;
 
   &__header {
     display: flex;
@@ -40,7 +41,7 @@
 
   .central-header {
     justify-content: center;
-    padding: 50px 115px 60px 140px;
+    padding: 50px 0 60px 0;
   }
 
   &__title {
@@ -62,6 +63,11 @@
   }
 }
 
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1620px;
+}
+
 .central-title::after {
   left: calc((100% - 69px) / 2);
 }
@@ -72,7 +78,7 @@
 
 .section-sellers {
   padding-bottom: 135px;
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-primary-color);
 }
 
 .section-information {
@@ -116,12 +122,13 @@
 
 .popular-section__item-row-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .popular-item {
   position: relative;
+  margin-bottom: 20px;
   width: 530px;
   height: 345px;
 
@@ -139,31 +146,32 @@
 
     &:hover {
       background-color: var(--hover-color);
-      color: var(--background-primary-color);
+      color: var(--white-color);
       transition: 0.2s ease-in-out;
     }
   }
+}
 
-  &:first-child {
-    background-image: url("../../img/content-part/popular-sections/book_item.png");
-  }
+.first-row {
+  background-image: url("../../img/content-part/popular-sections/book_item.png");
+}
 
-  &:nth-child(2) {
-    background-image: url("../../img/content-part/popular-sections/box-item.png");
-  }
+.second-row {
+  background-image: url("../../img/content-part/popular-sections/box-item.png");
+}
 
-  &:nth-child(3) {
-    background-image: url("../../img/content-part/popular-sections/gun-item.png");
-  }
+.third-row {
+  background-image: url("../../img/content-part/popular-sections/gun-item.png");
 }
 
 .section-benefits {
   margin-bottom: 70px;
-  padding: 0 285px;
 
   &__benefits-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 135px;
   }
 
   &__benefit-item {
@@ -184,33 +192,9 @@
   width: 375px;
 }
 
-.bg-clock {
-  width: 102px;
-  height: 76px;
-  background-position: -132px -132px;
-}
-
-.bg-notes {
-  width: 103px;
-  height: 102px;
-  background-position: -10px -10px;
-}
-
-.bg-hand_n_shild {
-  width: 102px;
-  height: 96px;
-  background-position: -133px -10px;
-}
-
-.bg-save_money {
-  width: 102px;
-  height: 96px;
-  background-position: -10px -132px;
-}
-
 .section-articles {
   padding-bottom: 70px;
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-primary-color);
 
   &__articles-wrapper {
     display: flex;
@@ -219,6 +203,7 @@
 
   &__article {
     cursor: pointer;
+    width: 390px;
 
     &:hover > h2,
     &:hover > p {
@@ -229,11 +214,6 @@
 }
 
 .article {
-  &__img {
-    width: 390px;
-    height: 390px;
-  }
-
   &__title {
     margin-top: 40px;
     font-family: var(--title-font-family);
@@ -246,15 +226,14 @@
 }
 
 .section-help {
-  padding: 0 465px 140px;
-
-  &__header {
+  .section__header {
     padding: 80px 0 80px;
   }
 
   &__helps-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0 315px 140px;
   }
 
   &__help-item {
@@ -275,28 +254,4 @@
       transition: 0.2s ease-in-out;
     }
   }
-}
-
-.bg-message {
-  width: 81px;
-  height: 74px;
-  background-position: -10px -248px;
-}
-
-.bg-faq {
-  width: 91px;
-  height: 69px;
-  background-position: -255px -108px;
-}
-
-.bg-chat {
-  width: 92px;
-  height: 78px;
-  background-position: -255px -10px;
-}
-
-.bg-whatsapp {
-  width: 74px;
-  height: 74px;
-  background-position: -111px -248px;
 }

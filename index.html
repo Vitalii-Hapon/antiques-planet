@@ -20,86 +20,106 @@
 
 <body>
     <header class="header">
-        <nav class="main-nav">
-            <a href="#main" class="logo-link">AntiquesPlanet</a>
-            <a href="#customers" class="link customers-link">Sellers / Buyers</a>
-            <button class="search-btn icon bg-search"></button>
-            <a href="#benefits" class="link about-link">About</a>
-            <a href="#contacts" class="link contacts-link">Contacts</a>
-            <a href="#" class="link authorization-link">login / registration</a>
-        </nav>
+        <div class="content-wrapper">
+            <nav class="main-nav">
+                <div class="main-nav__menu-wrapper">
+                    <a href="#main" class="logo-link">AntiquesPlanet</a>
 
-        <nav class="sub-nav">
-            <ul class="link-menu">
-                <li class="link"><a href="#catalog">catalog</a></li>
-                <li class="link"><a href="#sellers">sellers</a></li>
-                <li class="link"><a href="#recommended">recommended</a></li>
-                <li class="link"><a href="#new">new</a></li>
-            </ul>
-            <a href="" class="link store-link">create your store</a>
-        </nav>
+                    <div class="main-nav__menu">
+                        <a href="#customers" class="link customers-link">Sellers / Buyers</a>
+
+                        <label><input type="text" class="search-input" placeholder="..."></label>
+                        <button class="search-btn icon bg-search"></button>
+                    </div>
+                </div>
+
+                <ul class="main-nav__links-list">
+                    <li class="main-nav__link-item about-link">
+                        <a href="#benefits" class="link ">About</a>
+                    </li>
+
+                    <li class="main-nav__link-item contacts-link">
+                        <a href="#contacts" class="link ">Contacts</a>
+                    </li>
+
+                    <li class="main-nav__link-item authorization-link">
+                        <a href="#" class="link ">login / registration</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <nav class="sub-nav">
+                <ul class="link-menu">
+                    <li class="link"><a href="#catalog">catalog</a></li>
+                    <li class="link"><a href="#sellers">sellers</a></li>
+                    <li class="link"><a href="#recommended">recommended</a></li>
+                    <li class="link"><a href="#new">new</a></li>
+                </ul>
+                <a href="" class="link store-link">create your store</a>
+            </nav>
+        </div>
     </header>
 
     <main class="content">
         <section class="main-slider__section swiper-container">
             <a name="main" class="anchor"></a>
-            <div class="main-slider__wrapper swiper-wrapper">
-                <div class="main-slider__slide main-slide swiper-slide">
-                    <article class="main-slide__article">
-                        <h2 class="main-slide__title">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </h2>
-                        <p class="main-slide__paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente vel, magni aliquid
-                            modi voluptates. Lorem ipsum dolor sit amet.
-                        </p>
-                        <a class="main-slide__link-btn link-btn" href="#">shop now</a>
-                    </article>
+                <div class="main-slider__wrapper swiper-wrapper">
+                    <div class="main-slider__slide main-slide swiper-slide">
+                        <article class="main-slide__article">
+                            <h2 class="main-slide__title">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </h2>
+                            <p class="main-slide__paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente vel, magni
+                                aliquid
+                                modi voluptates. Lorem ipsum dolor sit amet.
+                            </p>
+                            <a class="main-slide__link-btn link-btn" href="#">shop now</a>
+                        </article>
+                    </div>
+                    <div class="main-slider__slide main-slide swiper-slide"></div>
+                    <div class="main-slider__slide main-slide swiper-slide"></div>
+                    <div class="main-slider__slide main-slide swiper-slide"></div>
                 </div>
-                <div class="main-slider__slide main-slide swiper-slide"></div>
-                <div class="main-slider__slide main-slide swiper-slide"></div>
-                <div class="main-slider__slide main-slide swiper-slide"></div>
-            </div>
-            <div class="swiper-button-prev main-slider__button-prev">
-                <div class="icon bg-arrow arrow-prev "></div>
-            </div>
+                <button class="swiper-button-prev main-slider__button-prev">
+                </button>
 
-            <div class="swiper-button-next main-slider__button-next">
-                <div class="icon bg-arrow arrow-next "></div>
-            </div>
+                <button class="swiper-button-next main-slider__button-next">
+                </button>
 
-            <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>
         </section>
 
 
         <section class="section section-new">
             <a name="new" class="anchor"></a>
-            <div class="section__header slider-header">
-                <h2 class="section__title ">New</h2>
-                <a class="section__btn link-btn" href="#">view all</a>
-            </div>
-
-            <div class="section-new__slider swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="section-new__slide swiper-slide">
-                        <img src="./img/sliders/slider1.png" alt="slide image">
-                    </div>
-                    <div class="section-new__slide swiper-slide">
-                        <img src="./img/sliders/slider1.png" alt="slide image">
-                    </div>
-                    <div class="section-new__slide swiper-slide">
-                        <img src="./img/sliders/slider1.png" alt="slide image">
-                    </div>
-                    <div class="section-new__slide swiper-slide">
-                        <img src="./img/sliders/slider1.png" alt="slide image">
-                    </div>
-                </div>
-                <div class="swiper-button-prev section-new__slider__button-prev">
-                    <div class="icon bg-arrow-black arrow-prev "></div>
+            <div class="content-wrapper">
+                <div class="section__header slider-header">
+                    <h2 class="section__title ">New</h2>
+                    <a class="section__btn link-btn" href="#">view all</a>
                 </div>
 
-                <div class="swiper-button-next section-new__slider__button-next">
-                    <div class="icon bg-arrow-black arrow-next "></div>
+                <div class="section-new__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="section-new__slide swiper-slide">
+                            <img src="./img/sliders/slider1.png" alt="slide image">
+                        </div>
+                        <div class="section-new__slide swiper-slide">
+                            <img src="./img/sliders/slider1.png" alt="slide image">
+                        </div>
+                        <div class="section-new__slide swiper-slide">
+                            <img src="./img/sliders/slider1.png" alt="slide image">
+                        </div>
+                        <div class="section-new__slide swiper-slide">
+                            <img src="./img/sliders/slider1.png" alt="slide image">
+                        </div>
+                    </div>
+                    <button class="swiper-button-prev section-new__slider__button-prev">
+                    </button>
+
+                    <button class="swiper-button-next section-new__slider__button-next">
+                    </button>
                 </div>
             </div>
         </section>
@@ -107,364 +127,378 @@
 
         <section class="section section-recommended">
             <a name="recommended" class="anchor"></a>
-            <div class="section__header slider-header">
-                <h2 class="section__title">Recommended</h2>
-                <a class="section__btn link-btn" href="#">view all</a>
-            </div>
-
-            <div class="section-recommended__slider swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="section-recommended__slide swiper-slide">
-                        <img src="./img/sliders/slider2.png" alt="slide image">
-                    </div>
-                    <div class="section-recommended__slide swiper-slide">
-                        <img src="./img/sliders/slider2.png" alt="slide image">
-                    </div>
-                    <div class="section-recommended__slide swiper-slide">
-                        <img src="./img/sliders/slider2.png" alt="slide image">
-                    </div>
-                    <div class="section-recommended__slide swiper-slide">
-                        <img src="./img/sliders/slider2.png" alt="slide image">
-                    </div>
-                </div>
-                <div class="swiper-button-prev section-recommended__slider__button-prev">
-                    <div class="icon bg-arrow-black arrow-prev "></div>
+            <div class="content-wrapper">
+                <div class="section__header slider-header">
+                    <h2 class="section__title">Recommended</h2>
+                    <a class="section__btn link-btn" href="#">view all</a>
                 </div>
 
-                <div class="swiper-button-next section-recommended__slider__button-next">
-                    <div class="icon bg-arrow-black arrow-next "></div>
+                <div class="section-recommended__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="section-recommended__slide swiper-slide">
+                            <img src="./img/sliders/slider2.png" alt="slide image">
+                        </div>
+                        <div class="section-recommended__slide swiper-slide">
+                            <img src="./img/sliders/slider2.png" alt="slide image">
+                        </div>
+                        <div class="section-recommended__slide swiper-slide">
+                            <img src="./img/sliders/slider2.png" alt="slide image">
+                        </div>
+                        <div class="section-recommended__slide swiper-slide">
+                            <img src="./img/sliders/slider2.png" alt="slide image">
+                        </div>
+                    </div>
+                    <button class="swiper-button-prev section-recommended__slider__button-prev">
+                        </и>
+
+                        <button class="swiper-button-next section-recommended__slider__button-next">
+                            </и>
                 </div>
             </div>
         </section>
 
-        
+
         <section class="section section-sellers" #sellers>
             <a name="sellers" class="anchor"></a>
-            <div class="section__header slider-header">
-                <h2 class="section__title">Sellers</h2>
-                <a class="section__btn link-btn" href="#">view all</a>
-            </div>
-
-            <div class="section-sellers__slider swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="section-sellers__slide swiper-slide">
-                        <img src="./img/sliders/slider3.png" alt="slide image">
-                    </div>
-
-                    <div class="section-sellers__slide swiper-slide">
-                        <img src="./img/sliders/slider3.png" alt="slide image">
-                    </div>
-
-                    <div class="section-sellers__slide swiper-slide">
-                        <img src="./img/sliders/slider3.png" alt="slide image">
-                    </div>
-
-                    <div class="section-sellers__slide swiper-slide">
-                        <img src="./img/sliders/slider3.png" alt="slide image">
-                    </div>
-
-                    <div class="section-sellers__slide swiper-slide">
-                        <img src="./img/sliders/slider3.png" alt="slide image">
-                    </div>
-                </div>
-                <div class="swiper-button-prev section-sellers__slider__button-prev">
-                    <div class="icon bg-arrow-black arrow-prev "></div>
+            <div class="content-wrapper">
+                <div class="section__header slider-header">
+                    <h2 class="section__title">Sellers</h2>
+                    <a class="section__btn link-btn" href="#">view all</a>
                 </div>
 
-                <div class="swiper-button-next section-sellers__slider__button-next">
-                    <div class="icon bg-arrow-black arrow-next "></div>
+                <div class="section-sellers__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="section-sellers__slide swiper-slide">
+                            <img src="./img/sliders/slider3.png" alt="slide image">
+                        </div>
+
+                        <div class="section-sellers__slide swiper-slide">
+                            <img src="./img/sliders/slider3.png" alt="slide image">
+                        </div>
+
+                        <div class="section-sellers__slide swiper-slide">
+                            <img src="./img/sliders/slider3.png" alt="slide image">
+                        </div>
+
+                        <div class="section-sellers__slide swiper-slide">
+                            <img src="./img/sliders/slider3.png" alt="slide image">
+                        </div>
+
+                        <div class="section-sellers__slide swiper-slide">
+                            <img src="./img/sliders/slider3.png" alt="slide image">
+                        </div>
+                    </div>
+                    <button class="swiper-button-prev section-sellers__slider__button-prev">
+                    </button>
+
+                    <button class="swiper-button-next section-sellers__slider__button-next">
+                    </button>
                 </div>
             </div>
         </section>
 
         <section class="section section-information">
             <a name="customers" class="anchor"></a>
-            <div class="section__header central-header">
-                <h2 class="section__title central-title">Information</h2>
-            </div>
-
-            <div class="section-information__wrapper">
-                <div class="section-information__link-wrapper">
-                    <a href="#" class="section-information__link">for sellers</a>
-                    <div class="section-information__link-background"></div>
+            <div class="content-wrapper">
+                <div class="section__header central-header">
+                    <h2 class="section__title central-title">Information</h2>
                 </div>
 
-                <div class="section-information__link-wrapper">
-                    <a href="#" class="section-information__link">for buyers</a>
-                    <div class="section-information__link-background"></div>
+                <div class="section-information__wrapper">
+                    <div class="section-information__link-wrapper">
+                        <a href="#" class="section-information__link">for sellers</a>
+                        <div class="section-information__link-background"></div>
+                    </div>
+
+                    <div class="section-information__link-wrapper">
+                        <a href="#" class="section-information__link">for buyers</a>
+                        <div class="section-information__link-background"></div>
+                    </div>
+
                 </div>
 
+                <a class="link-btn create-link" href="#">creative your store in 10 minutes</a>
             </div>
-
-            <a class="link-btn create-link" href="#">creative your store in 10 minutes</a>
         </section>
 
         <section class="section section-popular">
             <a name="catalog" class="anchor"></a>
-            <div class="section__header central-header">
-                <h2 class="section__title central-title">Popular-sections</h2>
-            </div>
-
-            <div class="popular-section__item-row-wrapper">
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
+            <div class="conent-wrapper">
+                <div class="section__header central-header">
+                    <h2 class="section__title central-title">Popular-sections</h2>
                 </div>
 
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
+                <div class="popular-section__item-row-wrapper">
+                    <div class="popular-item first-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
-            </div>
+                    <div class="popular-item second-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-            <div class="popular-section__item-row-wrapper">
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
+                    <div class="popular-item third-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
+                    <div class="popular-item first-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
-            </div>
+                    <div class="popular-item second-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-            <div class="popular-section__item-row-wrapper">
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
+                    <div class="popular-item third-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
-                </div>
+                    <div class="popular-item first-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
 
-                <div class="popular-item">
-                    <a href="#" class="popular-item__link">Name</a>
+                    <div class="popular-item second-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
+
+                    <div class="popular-item third-row">
+                        <a href="#" class="popular-item__link">Name</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section section-benefits">
             <a name="benefits" class="anchor"></a>
-            <div class="section__header central-header">
-                <h2 class="section__title central-title">
-                    Benefits
-                </h2>
-            </div>
+            <div class="conent-wrapper">
+                <div class="section__header central-header">
+                    <h2 class="section__title central-title">
+                        Benefits
+                    </h2>
+                </div>
 
-            <div class="section-benefits__benefits-wrapper">
-                <div class="section-benefits__benefit-item">
-                    <div class="benefit-item__icon icon bg-clock">
+                <div class="section-benefits__benefits-wrapper">
+                    <div class="section-benefits__benefit-item">
+                        <div class="benefit-item__icon icon bg-clock">
+                        </div>
+
+                        <p class="benefit-item__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam
+                            sapiente.
+                            Quisquam
+                            illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
+                        </p>
                     </div>
 
-                    <p class="benefit-item__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam sapiente.
-                        Quisquam
-                        illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
-                    </p>
-                </div>
+                    <div class="section-benefits__benefit-item">
+                        <div class="benefit-item__icon icon bg-notes"></div>
 
-                <div class="section-benefits__benefit-item">
-                    <div class="benefit-item__icon icon bg-notes"></div>
+                        <p class="benefit-item__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam
+                            sapiente.
+                            Quisquam
+                            illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
+                        </p>
+                    </div>
 
-                    <p class="benefit-item__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam sapiente.
-                        Quisquam
-                        illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
-                    </p>
-                </div>
-            </div>
+                    <div class="section-benefits__benefit-item">
+                        <div class="benefit-item__icon icon bg-save_money"></div>
 
-            <div class="section-benefits__benefits-wrapper">
-                <div class="section-benefits__benefit-item">
-                    <div class="benefit-item__icon icon bg-save_money"></div>
+                        <p class="benefit-item__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam
+                            sapiente.
+                            Quisquam
+                            illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
+                        </p>
+                    </div>
 
-                    <p class="benefit-item__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam sapiente.
-                        Quisquam
-                        illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
-                    </p>
-                </div>
+                    <div class="section-benefits__benefit-item">
+                        <div class="benefit-item__icon icon bg-hand_n_shild"></div>
 
-                <div class="section-benefits__benefit-item">
-                    <div class="benefit-item__icon icon bg-hand_n_shild"></div>
-
-                    <p class="benefit-item__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam sapiente.
-                        Quisquam
-                        illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
-                    </p>
+                        <p class="benefit-item__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit aliquam
+                            sapiente.
+                            Quisquam
+                            illum eos fuga, voluptatibus nobis, commodi odit maxime placeat cum, tenetur saepe!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section section-articles">
-            <div class="section__header central-header">
-                <h2 class="section__title central-title">
-                    Articles
-                </h2>
-            </div>
-
-            <div class="section-articles__articles-wrapper">
-                <article class="section-articles__article">
-                    <img src="./img/articles/article1.png" alt="article image" class="article__img">
-
-                    <h2 class="article__title">
-                        name of article
+            <div class="content-wrapper">
+                <div class="section__header central-header">
+                    <h2 class="section__title central-title">
+                        Articles
                     </h2>
+                </div>
 
-                    <p class="article__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum incidunt
-                        impedit quas ab sunt voluptatem sit, quasi
-                    </p>
-                </article>
+                <div class="section-articles__articles-wrapper">
+                    <article class="section-articles__article">
+                        <img src="./img/articles/article1.png" alt="article image" class="article__img">
 
-                <article class="section-articles__article">
-                    <img src="./img/articles/article2.png" alt="article image" class="article__img">
+                        <h2 class="article__title">
+                            name of article
+                        </h2>
 
-                    <h2 class="article__title">
-                        name of article
-                    </h2>
+                        <p class="article__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum
+                            incidunt
+                            impedit quas ab sunt voluptatem sit, quasi
+                        </p>
+                    </article>
 
-                    <p class="article__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum incidunt
-                        impedit quas ab sunt voluptatem sit, quasi
-                    </p>
-                </article>
+                    <article class="section-articles__article">
+                        <img src="./img/articles/article2.png" alt="article image" class="article__img">
 
-                <article class="section-articles__article">
-                    <img src="./img/articles/article3.png" alt="article image" class="article__img">
+                        <h2 class="article__title">
+                            name of article
+                        </h2>
 
-                    <h2 class="article__title">
-                        name of article
-                    </h2>
+                        <p class="article__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum
+                            incidunt
+                            impedit quas ab sunt voluptatem sit, quasi
+                        </p>
+                    </article>
 
-                    <p class="article__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum incidunt
-                        impedit quas ab sunt voluptatem sit, quasi
-                    </p>
-                </article>
+                    <article class="section-articles__article">
+                        <img src="./img/articles/article3.png" alt="article image" class="article__img">
 
-                <article class="section-articles__article">
-                    <img src="./img/articles/article4.png" alt="article image" class="article__img">
+                        <h2 class="article__title">
+                            name of article
+                        </h2>
 
-                    <h2 class="article__title">
-                        name of article
-                    </h2>
+                        <p class="article__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum
+                            incidunt
+                            impedit quas ab sunt voluptatem sit, quasi
+                        </p>
+                    </article>
 
-                    <p class="article__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum incidunt
-                        impedit quas ab sunt voluptatem sit, quasi
-                    </p>
-                </article>
+                    <article class="section-articles__article">
+                        <img src="./img/articles/article4.png" alt="article image" class="article__img">
+
+                        <h2 class="article__title">
+                            name of article
+                        </h2>
+
+                        <p class="article__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae, molestiae illum
+                            incidunt
+                            impedit quas ab sunt voluptatem sit, quasi
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
 
         <section class="section section-help">
-            <div class="section__header central-header">
-                <h2 class="section__title central-title">
-                    We are here to Help
-                </h2>
-            </div>
-
-            <div class="section-help__helps-wrapper">
-                <div class="section-help__help-item">
-                    <div class="help-item__img icon bg-message"></div>
-                    <p class="help-item__paragraph">
-                        Message
-                    </p>
+            <div class="content-wrapper">
+                <div class="section__header central-header">
+                    <h2 class="section__title central-title">
+                        We are here to Help
+                    </h2>
                 </div>
 
-                <div class="section-help__help-item">
-                    <div class="help-item__img icon bg-chat"></div>
-                    <p class="help-item__paragraph">
-                        Chat
-                    </p>
-                </div>
+                <div class="section-help__helps-wrapper">
+                    <a href="#" class="section-help__help-item">
+                        <span class="help-item__img icon bg-message"></span>
+                        <span class="help-item__paragraph">
+                            Message
+                        </span>
+                    </a>
 
-                <div class="section-help__help-item">
-                    <div class="help-item__img icon bg-whatsapp"></div>
-                    <p class="help-item__paragraph">
-                        WhatsApp
-                    </p>
-                </div>
+                    <a href="#" class="section-help__help-item">
+                        <span class="help-item__img icon bg-chat"></span>
+                        <span class="help-item__paragraph">
+                            Chat
+                        </span>
+                    </a>
 
-                <div class="section-help__help-item">
-                    <div class="help-item__img icon bg-faq"></div>
-                    <p class="help-item__paragraph">
-                        FAQ
-                    </p>
+                    <a href="#" class="section-help__help-item">
+                        <span class="help-item__img icon bg-whatsapp"></span>
+                        <span class="help-item__paragraph">
+                            WhatsApp
+                        </span>
+                    </a>
+
+                    <a href="#" class="section-help__help-item">
+                        <span class="help-item__img icon bg-faq"></span>
+                        <span class="help-item__paragraph">
+                            FAQ
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <nav class="footer__main-nav">
-            <a href="#main" class="logo-link">AntiquesPlanet</a>
+        <div class="content-wrapper">
+            <nav class="footer__main-nav">
+                <a href="#main" class="logo-link">AntiquesPlanet</a>
 
-            <div class="social-links-wrapper">
-                <h2 class="section__title central-title">
-                    Follow Us
-                </h2>
-                <ul class="social-links-list">
-                    <li class="social-links__item icon bg-facebook"></li>
-                    <li class="social-links__item icon bg-youtube"></li>
-                    <li class="social-links__item icon bg-instagram"></li>
-                    <li class="social-links__item icon bg-pinterest"></li>
+                <div class="social-links-wrapper">
+                    <h2 class="section__title central-title">
+                        Follow Us
+                    </h2>
+                    <ul class="social-links-list">
+                        <li class="social-links__item icon bg-facebook"></li>
+                        <li class="social-links__item icon bg-youtube"></li>
+                        <li class="social-links__item icon bg-instagram"></li>
+                        <li class="social-links__item icon bg-pinterest"></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="footer__sub-nav">
+                <ul class="sub-nav-list">
+                    <li class="sub-nav-list__item">
+                        <ul class="sub-nav-list__main-links-list">
+                            <li class="main-link-list__item">
+                                <a href="#customers">sellers/buyers</a>
+                            </li>
+                            <li class="main-link-list__item">
+                                <a href="#benefits">about</a>
+                            </li>
+                            <li class="main-link-list__item">
+                                <a href="#contacts">contacts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-nav-list__item">
+                        <ul class="sub-nav-list__site-links-list">
+                            <li class="site-link-list__item"><a href="#catalog">catalog</a></li>
+                            <li class="site-link-list__item"><a href="#new">new</a></li>
+                            <li class="site-link-list__item"><a href="#recommended">recommended</a></li>
+                            <li class="site-link-list__item"><a href="#sellers">sellers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-nav-list__item">
+                        <a name="contacts"></a>
+                        <ul class="sub-nav-list__contacts-links-list">
+                            <li class="site-link-list__item">
+                                <a href="tel:+0123456789">contact us +0 123 45 67 89</a>
+                            </li>
+
+                            <li class="site-link-list__item">
+                                <a href="wa.me0/+987654321">whatsapp +9 876 543 21</a>
+                            </li>
+
+                            <li class="site-link-list__item">
+                                <a href="mailto:antique@planet .com">email antique@planet.com</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
 
-        <nav class="footer__sub-nav">
-            <ul class="sub-nav-list">
-                <li class="sub-nav-list__item">
-                    <ul class="sub-nav-list__main-links-list">
-                        <li class="main-link-list__item">
-                            <a href="#customers">sellers/buyers</a>
-                        </li>
-                        <li class="main-link-list__item">
-                            <a href="#benefits">about</a>
-                        </li>
-                        <li class="main-link-list__item">
-                            <a href="#contacts">contacts</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="sub-nav-list__item">
-                    <ul class="sub-nav-list__site-links-list">
-                        <li class="site-link-list__item"><a href="#catalog">catalog</a></li>
-                        <li class="site-link-list__item"><a href="#new">new</a></li>
-                        <li class="site-link-list__item"><a href="#recommended">recommended</a></li>
-                        <li class="site-link-list__item"><a href="#sellers">sellers</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-nav-list__item">
-                    <a name="contacts"></a>
-                    <ul class="sub-nav-list__contacts-links-list">
-                        <li class="site-link-list__item">
-                            <a href="tel:+0123456789">contact us +0 123 45 67 89</a>
-                        </li>
-
-                        <li class="site-link-list__item">
-                            <a href="wa.me0/+987654321">whatsapp +9 876 543 21</a>
-                        </li>
-
-                        <li class="site-link-list__item">
-                            <a href="mailto:antique@planet .com">email antique@planet.com</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <p>Copyright &#169 2020 All rights reserved</p>
+            <p>Copyright &#169 2020 All rights reserved</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
