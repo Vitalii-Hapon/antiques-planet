@@ -24,6 +24,7 @@ new Swiper(".main-slider__section", {
     crossFade: true,
   },
   speed: 1500,
+  slidesPerView: 1,
 });
 
 new Swiper(".section-new__slider", {
@@ -45,7 +46,7 @@ new Swiper(".section-new__slider", {
   loop: true,
   speed: 1000,
   spaceBetween: 20,
-  slidesPerView: 3,
+  slidesPerView: "auto",
 });
 
 new Swiper(".section-recommended__slider", {
@@ -67,7 +68,7 @@ new Swiper(".section-recommended__slider", {
   loop: true,
   speed: 1000,
   spaceBetween: 20,
-  slidesPerView: 3,
+  slidesPerView: "auto",
 });
 
 new Swiper(".section-sellers__slider", {
@@ -89,5 +90,27 @@ new Swiper(".section-sellers__slider", {
   loop: true,
   speed: 1000,
   spaceBetween: 20,
-  slidesPerView: 4,
+  slidesPerView: 'auto',
 });
+
+const customerLink = document.getElementsByClassName("customers-link")[0];
+
+const searchInput = document.getElementsByClassName("search-input")[0];
+
+function toggleSearchImput() {
+  searchInput.classList.toggle("search-input_active");
+  if (window.screen.width < 1800) {
+    customerLink.classList.toggle("none");
+  }
+}
+
+const linkMenu = document.getElementById("link-menu");
+
+function toggleMenu(e) {
+  if (linkMenu.classList.contains("active")) {
+    e.target.innerHTML = '&#8801';
+  } else {
+    e.target.innerHTML = "&#88";
+  }
+  linkMenu.classList.toggle('active');
+}

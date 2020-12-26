@@ -9,10 +9,14 @@
   visibility: hidden;
 }
 
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1620px;
+}
+
 .link-btn {
   display: block;
   width: 124px;
-  height: 37px;
   border: 1px solid var(--primary-color);
   font-family: var(--subtitle-font-family);
   font-size: var(--subtitle-font-size);
@@ -62,11 +66,6 @@
   }
 }
 
-.content-wrapper {
-  margin: 0 auto;
-  max-width: 1620px;
-}
-
 .central-title::after {
   left: calc((100% - 69px) / 2);
 }
@@ -77,162 +76,20 @@
 
 .section-sellers {
   padding-bottom: 135px;
-  background-color: var(--background-primary-color);
-}
-
-.section-information {
-  margin-bottom: 35px;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 85px;
-  }
-
-  &__link-wrapper {
-    padding: 45px 75px 25px;
-    width: 800px;
-    height: 370px;
-    background-color: #f4ede7;
-    text-align: center;
-
-    a {
-      color: var(--secondary-color);
-      font-size: 40px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-  }
-
-  &__link-background {
-    width: 648px;
-    height: 250px;
-    background-image: url("../../img/content-part/castle.png");
-  }
-}
-
-.create-link {
-  margin: 0 auto;
-  width: 585px;
-  height: 82px;
-  font-size: var(--title-font-size);
-  line-height: 82px;
-}
-
-.popular-section__item-row-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.popular-item {
-  position: relative;
-  margin-bottom: 20px;
-  width: 530px;
-  height: 345px;
-
-  &__link {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 73px;
-    background-color: var(--UI-background-color);
-    font-size: var(--title-font-size);
-    font-weight: 600;
-    line-height: 73px;
-    text-align: center;
-
-    &:hover {
-      background-color: var(--hover-color);
-      color: var(--white-color);
-      transition: 0.2s ease-in-out;
-    }
-  }
-}
-
-.first-row {
-  background-image: url("../../img/content-part/popular-sections/book_item.png");
-}
-
-.second-row {
-  background-image: url("../../img/content-part/popular-sections/box-item.png");
-}
-
-.third-row {
-  background-image: url("../../img/content-part/popular-sections/gun-item.png");
-}
-
-.section-benefits {
-  margin-bottom: 70px;
-
-  &__benefits-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 135px;
-  }
-
-  &__benefit-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 70px;
-    width: 665px;
-
-    &:hover {
-      box-shadow: -8px 6px 15px 1px var(--box-shadow-color);
-      transition: 0.2s ease-in-out;
-    }
-  }
-}
-
-.benefit-item__paragraph {
-  width: 375px;
-}
-
-.section-articles {
-  padding-bottom: 70px;
-  background-color: var(--background-primary-color);
-
-  &__articles-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__article {
-    cursor: pointer;
-    width: 390px;
-
-    &:hover > h2,
-    &:hover > p {
-      color: var(--secondary-color);
-      transition: 0.2s ease-in-out;
-    }
-  }
-}
-
-.article {
-  &__title {
-    margin-top: 40px;
-    font-family: var(--title-font-family);
-    text-transform: uppercase;
-  }
-
-  &__paragraph {
-    display: flex;
-  }
+  background-color: var(--background-secondary-color);
 }
 
 .section-help {
   .section__header {
-    padding: 80px 0 80px;
+    padding: 80px 0;
   }
 
   &__helps-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 315px 140px;
+    max-width: 990px;
+    padding-bottom: 140px;
+    margin: 0 auto;
   }
 
   &__help-item {
@@ -258,5 +115,92 @@
 @media (max-width: 1800px) {
   .content-wrapper {
     max-width: 90vw;
+  }
+
+  .section-help__helps-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .section-sellers {
+    padding-bottom: 85px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .section-sellers {
+    padding-bottom: 4vw;
+  }
+
+  .section__title::after {
+    width: 57px;
+  }
+
+  .section {
+    .section__header {
+      padding: 40px 10vw 50px 12vw;
+    }
+
+    .central-header {
+      padding: 40px 0;
+    }
+  }
+
+  .section-help {
+    .section__header {
+      padding: 40px 0;
+    }
+
+    &__helps-wrapper {
+      padding-bottom: 70px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section .section__header {
+    padding: 35px 5vw;
+  }
+
+  .central-header {
+    padding: 35px 0;
+  }
+
+  .section-help {
+    .section__header {
+      padding: 35px 0;
+    }
+
+    &__helps-wrapper {
+      padding-bottom: 55px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .section .section__header {
+    padding: 30px 2vw;
+  }
+
+  .central-header {
+    padding: 30px 0;
+  }
+
+  .section-help {
+    .section__header {
+      padding: 30px 0;
+    }
+
+    &__helps-wrapper {
+      padding-bottom: 45px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 340px;
+    }
+  }
+
+  .link-btn {
+    width: auto;
+    padding: 0 10px;
+    line-height: 32px;
   }
 }
